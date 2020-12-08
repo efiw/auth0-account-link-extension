@@ -43,7 +43,7 @@ module.exports = () => ({
     const customCSSTag = stylesheetHelper.tag(config('CUSTOM_CSS'));
 
     const dynamicSettings = {};
-
+    logger.info("In get_index!");
     if (req.query.locale) dynamicSettings.locale = req.query.locale;
     if (req.query.color) dynamicSettings.color = `#${req.query.color}`;
     if (req.query.title) dynamicSettings.title = req.query.title;

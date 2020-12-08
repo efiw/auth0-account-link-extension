@@ -52,7 +52,7 @@ module.exports = function(currentUser, matchingUsers) {
         audience: params.audience,
         link_account_token: params.child_token,
         prevent_sign_up: true,
-        connection: connections[0]
+        connection: "auth0"
       });
     });
 
